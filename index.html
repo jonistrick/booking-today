@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Buchungen heute</title>
+  <script>
+    const today = new Date().toISOString().slice(0,10);
+    const base = "https://bach.wu.ac.at/d/rr/bookings/viz/?";
+    const params = "d=" + today + "r=12281&r=12282&r=5335&r=5339&r=5343&r=5345&r=5346&r=5349&r=5350&r=5351&r=5355&r=5364&r=5365&r=5366&r=5368&r=5369&r=5376&r=5378&r=5383&r=6267&r=6274&r=6276&r=6309&r=6328&r=6330&r=6334&r=6344&r=6349&r=6364&r=6371&r=6380&r=6384&r=6393&r=6405&r=6408&r=6428&r=6434&r=6444&r=6448&r=6456&r=6457&r=6459&r=6473&r=6481&r=6492&r=6518&r=6522&r=6533&r=6549&f=
+    window.location.href = base + params;
+  </script>
+</head>
+<body>
+  <p>Weiterleitung zur Buchungsansicht...</p>
+</body>
+</html>
